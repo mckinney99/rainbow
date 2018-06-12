@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,11 +13,69 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Rainbow" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hUz-Py-vsG">
+                                <rect key="frame" x="162" y="147" width="44" height="30"/>
+                                <state key="normal" title="Yellow"/>
+                                <connections>
+                                    <action selector="yellow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dWb-Ci-Ocg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T9W-vh-ttU">
+                                <rect key="frame" x="163" y="203" width="42" height="30"/>
+                                <state key="normal" title="Green"/>
+                                <connections>
+                                    <action selector="green:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Ug-sD-IoV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ikF-x1-4ja">
+                                <rect key="frame" x="172" y="331" width="31" height="30"/>
+                                <state key="normal" title="Blue"/>
+                                <connections>
+                                    <action selector="blue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="60C-A6-AKr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BYh-5s-drq">
+                                <rect key="frame" x="167" y="396" width="40" height="30"/>
+                                <state key="normal" title="Violet"/>
+                                <connections>
+                                    <action selector="violet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RSr-Jb-NAm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OA9-Wm-tqT">
+                                <rect key="frame" x="162" y="264" width="51" height="30"/>
+                                <state key="normal" title="Orange"/>
+                                <connections>
+                                    <action selector="orange:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jdf-Vs-WtC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OUp-hH-4eS">
+                                <rect key="frame" x="167" y="91" width="30" height="30"/>
+                                <state key="normal" title="Red"/>
+                                <connections>
+                                    <action selector="red:" destination="BYZ-38-t0r" eventType="touchUpInside" id="edf-DH-Myr"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="OA9-Wm-tqT" firstAttribute="top" secondItem="T9W-vh-ttU" secondAttribute="bottom" constant="39" id="1oa-9h-Ogf"/>
+                            <constraint firstItem="OUp-hH-4eS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="62" id="C3P-xf-Lry"/>
+                            <constraint firstItem="ikF-x1-4ja" firstAttribute="top" secondItem="OA9-Wm-tqT" secondAttribute="bottom" constant="32" id="Eew-Nh-lZb"/>
+                            <constraint firstItem="OA9-Wm-tqT" firstAttribute="centerX" secondItem="ikF-x1-4ja" secondAttribute="centerX" id="HFb-UB-gsF"/>
+                            <constraint firstItem="hUz-Py-vsG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="168" id="L2Z-bN-hXy"/>
+                            <constraint firstItem="BYh-5s-drq" firstAttribute="top" secondItem="ikF-x1-4ja" secondAttribute="bottom" constant="47" id="QFL-Wc-Rqp"/>
+                            <constraint firstItem="hUz-Py-vsG" firstAttribute="top" secondItem="OUp-hH-4eS" secondAttribute="bottom" constant="35" id="S9i-lF-4ZN"/>
+                            <constraint firstItem="T9W-vh-ttU" firstAttribute="top" secondItem="hUz-Py-vsG" secondAttribute="bottom" constant="29" id="Xbs-KL-OyK"/>
+                            <constraint firstItem="OUp-hH-4eS" firstAttribute="leading" secondItem="ikF-x1-4ja" secondAttribute="leading" id="Zui-VB-7lJ"/>
+                            <constraint firstItem="ikF-x1-4ja" firstAttribute="centerX" secondItem="BYh-5s-drq" secondAttribute="centerX" id="gKg-UI-H6p"/>
+                            <constraint firstItem="T9W-vh-ttU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="164" id="iLI-PX-JhR"/>
+                            <constraint firstItem="OUp-hH-4eS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sVT-bF-AnA"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
